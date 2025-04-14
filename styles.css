@@ -243,6 +243,11 @@
   margin-bottom: 20px;
 }
 
+.hero-text h3 {
+  color: #007bff;
+}
+
+
 .hero-text p {
   font-size: 18px;
   color: #555;
@@ -316,6 +321,23 @@
   }
 }
 
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: #007bff; /* Change color to match your theme */
+  animation: blink 0.7s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
   
 /* About Section */
 .about {
@@ -366,9 +388,10 @@
 /* Services Section */
 .services {
   background-color: #f7f7f7;
-  padding: 100px 20px;
+  padding: 40px 20px; /* Reduced from 100px */
   text-align: center;
 }
+
 
 .services-container {
   display: flex;
@@ -384,7 +407,7 @@
   font-size: 3rem; /* Large font size for title */
   color: #007bff; /* Blue color for title */
   font-weight: bold;
-  margin-bottom: 100px; /* Add space below the title */
+  margin-bottom: 50px; /* Add space below the title */
 }
 
 .services-box {
@@ -438,7 +461,7 @@
 
 @media (min-width: 768px) {
   .services {
-    padding: 140px 60px;
+    padding: 80px 40px;
   }
 
   .services-container {
@@ -456,7 +479,7 @@
   align-items: center;
   flex-direction: column;
   background: #f0f8ff;
-  padding: 80px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 

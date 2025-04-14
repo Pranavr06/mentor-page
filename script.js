@@ -25,16 +25,33 @@ menuIcon.addEventListener("click", () => {
 // Typing animation for name
 const text = "Ms. ASHWITHA C THOMAS";
 const typedName = document.querySelector(".typed-name");
-let index = 0;
 
-function typeWriter() {
-  if (index < text.length) {
-    typedName.innerHTML += text.charAt(index);
+let index = 0;
+let isDeleting = false;
+
+function typeWriterLoop() {
+  if (!isDeleting) {
+    typedName.textContent = text.substring(0, index + 1);
     index++;
-    setTimeout(typeWriter, 100); // typing speed
+    if (index === text.length) {
+      setTimeout(() => {
+        isDeleting = true;
+        typeWriterLoop();
+      }, 1500); // Pause before deleting
+      return;
+    }
+  } else {
+    typedName.textContent = text.substring(0, index - 1);
+    index--;
+    if (index === 0) {
+      isDeleting = false;
+    }
   }
+
+  const speed = isDeleting ? 50 : 100;
+  setTimeout(typeWriterLoop, speed);
 }
 
 window.addEventListener("load", () => {
-  typeWriter();
+  typeWriterLoop();
 });
