@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="mentees-profile.css">
+</head>
+<body>
+  <section class="profile-section">
+    <h1>Student Info</h1>
+    <div class="profile-container">
+      <div class="profile-pic">
+        <img src="" alt="Mentee Profile Picture" class="profile-image" id="profile-image">
+      </div>
+
+      <table id="student-info">
+        <tr><th>Name</th><td id="name"></td></tr>
+        <tr><th>USN</th><td id="usn"></td></tr>
+        <tr><th>Date of Birth</th><td id="dob"></td></tr>
+        <tr><th>SSLC Marks</th><td id="sslc"></td></tr>
+        <tr><th>PUC/DIP Marks</th><td id="puc"></td></tr>
+        <tr><th>Email</th><td id="email"></td></tr>
+        <tr><th>Place of Stay</th><td id="place"></td></tr>
+        <tr><th>Hobbies</th><td id="hobbies"></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="family-section">
+    <h2>Family Info</h2>
+    <table id="family-info">
+      <tr><th>Father's Name</th><td id="fatherName"></td>
+          <th>Mother's Name</th><td id="motherName"></td></tr>
+      <tr><th>Father's Occupation</th><td id="fatherJob"></td>
+          <th>Mother's Occupation</th><td id="motherJob"></td></tr>
+      <tr><th>Address</th><td colspan="3" id="familyAddress"></td></tr>
+      <tr><th>Father's Phone</th><td id="fatherPhone"></td>
+          <th>Mother's Phone</th><td id="motherPhone"></td></tr>
+    </table>
+  </section>
+
+  <section class="academics-section">
+    <h2>Academics: Semester 1</h2>
+    <table id="academic-info">
+      <thead>
+        <tr>
+          <th>Course Code</th><th>Course Name</th><th>Attendance</th>
+          <th>MSE 1</th><th>MSE 2</th><th>Add MSE</th><th>Avg</th>
+          <th>SEE</th><th>Grade</th><th>GP</th>
+        </tr>
+      </thead>
+      <tbody id="academic-body">
+        <!-- Rows will be dynamically populated -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="academics-section">
+    <h2>Academics: Semester 2</h2>
+    <table id="academic-info-sem2">
+      <thead>
+        <tr>
+          <th>Course Code</th><th>Course Name</th><th>Attendance</th>
+          <th>MSE 1</th><th>MSE 2</th><th>Add MSE</th><th>Avg</th>
+          <th>SEE</th><th>Grade</th><th>GP</th>
+        </tr>
+      </thead>
+      <tbody id="academic-body-sem2">
+        <!-- Rows for Semester 2 will be dynamically populated -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="mentees-profile.js"></script>
+</body>
+</html>

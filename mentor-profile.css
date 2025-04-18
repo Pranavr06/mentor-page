@@ -1,0 +1,78 @@
+/* Basic styling for the mentor profile page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;  /* Added margin for spacing */
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Adjusted to start from the left */
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+  }
+  
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc; /* Added a border for a more defined image */
+  }
+  
+  #mentor-info {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #mentor-info th, #mentor-info td {
+    padding: 12px;  /* Increased padding for better readability */
+    text-align: left;
+    font-size: 16px; /* Set font size for better clarity */
+  }
+  
+  #mentor-info th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Make headings bold */
+  }
+  
+  #mentor-info td {
+    background-color: #fafafa;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Responsive styling for smaller screens */
+    .profile-container {
+      flex-direction: column;  /* Stack items vertically */
+      align-items: center;     /* Center the profile picture and info */
+    }
+  
+    .profile-pic img {
+      width: 120px;
+      height: 120px; /* Adjust image size for mobile */
+    }
+  
+    #mentor-info th, #mentor-info td {
+      padding: 8px; /* Less padding for smaller screens */
+      font-size: 14px; /* Smaller font size for better fit */
+    }
+  }
+  
