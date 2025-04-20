@@ -2,7 +2,7 @@
 const sections = document.querySelectorAll("section");
 
 const revealOnScroll = () => {
-  const triggerBottom = window.innerHeight * 0.85;
+  const triggerBottom = window.innerHeight * 0.85; // When the section top is 85% of the window height
   sections.forEach(section => {
     const sectionTop = section.getBoundingClientRect().top;
     if (sectionTop < triggerBottom) {

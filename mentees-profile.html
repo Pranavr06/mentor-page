@@ -7,6 +7,24 @@
   <link rel="stylesheet" href="mentees-profile.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-logo">Student Portal</div>
+  
+    <div class="nav-items" id="nav-items">
+      <div class="notification-wrapper">
+        <button class="notification-btn" onclick="toggleDropdown()" aria-label="Notifications">
+          🔔
+        </button>
+        <div class="notification-dropdown" id="notification-dropdown">
+          <p class="notif-item">No new notifications</p>
+          <!-- Future notifications -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
   <section class="profile-section">
     <h1>Student Info</h1>
     <div class="profile-container">

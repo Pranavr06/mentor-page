@@ -4,6 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchAcademicInfo();
 });
 
+function toggleNav() {
+  const navItems = document.getElementById('nav-items');
+  navItems.classList.toggle('show');
+}
+
+function toggleDropdown() {
+  const dropdown = document.getElementById('notification-dropdown');
+  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
+
+// Optional: Close dropdown when clicking outside
+window.onclick = function(e) {
+  if (!e.target.closest('.notification-wrapper')) {
+    document.getElementById('notification-dropdown').style.display = 'none';
+  }
+}
+
+
 async function fetchStudentInfo() {
   try {
     const response = await fetch('/api/student-info'); // Adjust endpoint as needed

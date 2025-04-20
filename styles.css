@@ -3,41 +3,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
   
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+}
   
-  button {
-    border: none;
-    background: none;
-  }
+button {
+  border: none;
+  background: none;
+}
   
-  /* Full-screen sections */
-  section {
-    min-height: 100vh;
-    padding: 100px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-  
-  section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+/* Full-screen sections */
+section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Header Section */
 .header {
@@ -471,53 +470,88 @@
 
 
 
-/* Contact Section */
+/* General Section Styling */
 .contact {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #f0f8ff;
-  padding: 40px 20px;
+  padding: 80px 20px;
+  background-color: #fff;  /* White background for professionalism */
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
-.contact-content h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-  color: #007bff;
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;  /* Dark color for the heading */
+  letter-spacing: 2px;
+}
+
+.contact-box {
+  background-color: #f4f4f4;  /* Light gray background for the contact box */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.574);  /* Soft shadow for a professional feel */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-box:hover {
+  transform: scale(1.1);  /* Slightly enlarge the icon on hover */
 }
 
 .email-icon {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 2px solid #007bff; /* Blue border around the icon and text */
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: white; /* White background for the button */
+  gap: 15px;
 }
 
-.email-icon .email-image {
-  width: 40px; /* Smaller icon size */
+.email-image {
+  width: 40px;
   height: 40px;
-  margin-right: 10px; /* Space between icon and text */
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.5));
-  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-
-.email-icon .email-text {
+.email-text {
   font-size: 18px;
-  color: #007bff;
-  font-weight: bold;
-  text-decoration: none; /* Remove underline from text */
+  font-weight: 500;
+  color: #000000;  
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
-.email-icon .email-text:hover {
-  text-decoration: underline; /* Underline the text on hover */
+.email-text:hover {
+  color: #007BFF;  /* Blue color on hover */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-box {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .email-text {
+    font-size: 16px;
+  }
 }
 
 /* Footer Section */
