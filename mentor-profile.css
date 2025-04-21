@@ -75,4 +75,72 @@ body {
       font-size: 14px; /* Smaller font size for better fit */
     }
   }
-  
+
+/* Center and style carousel images */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Style year selection buttons */
+.year-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #007bff;
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for year buttons */
+.year-buttons button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Style the container with some padding and spacing */
+.container {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
+}
+
+/* Heading style */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Carousel Navigation Button styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007bff; /* Blue background for control icons */
+  border-radius: 50%; /* Circular icons */
+  padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Custom styles for the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Narrow down control buttons */
+}
+
+/* Make carousel responsive on small screens */
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-height: 300px; /* Reduce height for smaller screens */
+  }
+}

@@ -44,3 +44,40 @@ fetch('/api/mentor')
     console.error('Error fetching mentor data:', error);
     alert('Failed to load mentor data');
   });
+
+// Sample student images by year (replace with real image paths)
+const studentPhotos = {
+  2024: [
+    "https://via.placeholder.com/600x400?text=Student+1+2024",
+    "https://via.placeholder.com/600x400?text=Student+2+2024"
+  ],
+  2025: [
+    "https://via.placeholder.com/600x400?text=Student+1+2025",
+    "https://via.placeholder.com/600x400?text=Student+2+2025"
+  ],
+  2026: [
+    "https://via.placeholder.com/600x400?text=Student+1+2026",
+    "https://via.placeholder.com/600x400?text=Student+2+2026"
+  ],
+  2027: [
+    "https://via.placeholder.com/600x400?text=Student+1+2027",
+    "https://via.placeholder.com/600x400?text=Student+2+2027"
+  ],
+  2028: [
+    "https://via.placeholder.com/600x400?text=Student+1+2028",
+    "https://via.placeholder.com/600x400?text=Student+2+2028"
+  ]
+};
+
+function loadCarousel(year) {
+  const images = studentPhotos[year] || [];
+  const carouselInner = document.getElementById("carouselInner");
+  carouselInner.innerHTML = "";
+
+  images.forEach((src, index) => {
+    const div = document.createElement("div");
+    div.className = "carousel-item" + (index === 0 ? " active" : "");
+    div.innerHTML = `<img src="${src}" class="d-block w-100" alt="Student Photo">`;
+    carouselInner.appendChild(div);
+  });
+}
