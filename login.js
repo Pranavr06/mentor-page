@@ -74,7 +74,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     .then(response => response.text())
     .then(data => {
       if (data === "Login successful!") {
-        window.location.href = "/mentor-profile.html"; // Redirect to mentor profile page
+        window.location.href = "mentor-profile.html"; // Redirect to mentor profile page
       } else {
         alert(data); // Show error message
       }
