@@ -55,3 +55,36 @@ function typeWriterLoop() {
 window.addEventListener("load", () => {
   typeWriterLoop();
 });
+
+// Section reveal on scroll
+// (Duplicate declaration removed)
+
+// Navbar toggle
+// Navbar toggle
+menuIcon.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+// Replace the existing typing animation with Typed.js
+const typed = new Typed('.typed-name', {
+    strings: ['Ms. ASHWITHA C THOMAS'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+    loop: true
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - 100,
+                behavior: 'smooth'
+            });
+            // Close mobile menu if open
+            navbar.classList.remove('active');
+        }
+    });
+});
