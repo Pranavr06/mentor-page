@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Student Profile</title>
   <link rel="stylesheet" href="mentees-profile.css">
-
-  
- <!-- HEADER SECTION -->
- <header class="header">
-  <span class="pagetitle">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER SECTION -->
+  <header class="header">
+    <span class="pagetitle">
       MENTEES PROFILE
-  </span>
-  <i class='bx bx-menu' id="menu-icon"></i>
-  <nav class="navbar" id="navbar">
+    </span>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar" id="navbar">
       <a href="mentees.html">About Mentor</a>
       <a href="mentees-dashboard.html">Dashboard</a>
       <a href="mentees-profile.html">Profile</a>
-  </nav>
-</header>    
-  
+    </nav>
+  </header>    
   
   <section class="profile-section">
     <h1>Student Info</h1>
@@ -27,7 +27,6 @@
       <div class="profile-pic">
         <img src="" alt="Mentee Profile Picture" class="profile-image" id="profile-image">
       </div>
-
       <table id="student-info">
         <tr><th>Name</th><td id="name"></td></tr>
         <tr><th>USN</th><td id="usn"></td></tr>
@@ -86,6 +85,12 @@
     </table>
   </section>
 
+  <script>
+    // Mobile menu toggle functionality
+    document.getElementById('menu-icon').addEventListener('click', () => {
+      document.getElementById('navbar').classList.toggle('active');
+    });
+  </script>
   <script src="mentees-profile.js"></script>
 </body>
 </html>

@@ -22,69 +22,31 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active"); // Toggle the active class to show/hide the menu
 });
 
-// Typing animation for name
-const text = "Ms. ASHWITHA C THOMAS";
-const typedName = document.querySelector(".typed-name");
-
-let index = 0;
-let isDeleting = false;
-
-function typeWriterLoop() {
-  if (!isDeleting) {
-    typedName.textContent = text.substring(0, index + 1);
-    index++;
-    if (index === text.length) {
-      setTimeout(() => {
-        isDeleting = true;
-        typeWriterLoop();
-      }, 1500); // Pause before deleting
-      return;
-    }
-  } else {
-    typedName.textContent = text.substring(0, index - 1);
-    index--;
-    if (index === 0) {
-      isDeleting = false;
-    }
-  }
-
-  const speed = isDeleting ? 50 : 100;
-  setTimeout(typeWriterLoop, speed);
-}
-
-window.addEventListener("load", () => {
-  typeWriterLoop();
-});
-
-// Section reveal on scroll
-// (Duplicate declaration removed)
-
-// Navbar toggle
-// Navbar toggle
-menuIcon.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
-// Replace the existing typing animation with Typed.js
-const typed = new Typed('.typed-name', {
+// Replace with Typed.js for typing animation (ensure library is included)
+if (typeof Typed !== 'undefined') {
+  const typed = new Typed('.typed-name', {
     strings: ['Ms. ASHWITHA C THOMAS'],
     typeSpeed: 100,
     backSpeed: 50,
     backDelay: 2000,
     loop: true
-});
+  });
+} else {
+  console.error('Typed.js library is not loaded. Please include <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> in your HTML.');
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 100,
-                behavior: 'smooth'
-            });
-            // Close mobile menu if open
-            navbar.classList.remove('active');
-        }
-    });
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 80, // Adjust based on your header height (e.g., 80px)
+        behavior: 'smooth'
+      });
+      // Close mobile menu if open
+      navbar.classList.remove('active');
+    }
+  });
 });

@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("login-background.png") no-repeat center/cover;
+  background: url("./file/login-background.png") no-repeat center/cover;
 }
 
 .wrapper {
