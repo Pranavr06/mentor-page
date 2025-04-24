@@ -1,102 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url(./file/login-background.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .wrapper {
-    width: 420px;
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(9px);
-    color: #fff;
-    border-radius: 12px;
-    padding: 30px 40px;
-  }
-  
-  .wrapper h1 {
-    font-size: 42px;
-    text-align: center;
-    color: #007bff;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px black;
-    text-shadow:
-      0 0 5px rgba(0, 123, 255, 0.5),
-      0 0 10px rgba(0, 123, 255, 0.3);
-    margin-bottom: 25px;
-  }
-  
-  .wrapper .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-  }
-  
-  .input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-  }
-  
-  .input-box input::placeholder {
-    color: #fff;
-  }
-  
-  .input-box i {
-    position: absolute;
-    right: 20px;
-    top: 30%;
-    transform: translate(-50%);
-    font-size: 20px;
-  }
-  
-  .remember-only {
-    font-size: 14.5px;
-    margin: -10px 0 20px;
-  }
-  
-  .remember-only label {
-    display: flex;
-    align-items: center;
-  }
-  
-  .remember-only input {
-    accent-color: #fff;
-    margin-right: 6px;
-  }
-  
-  .wrapper .btn {
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("login-background.png") no-repeat center/cover;
+}
+
+.wrapper {
+  width: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+/* Toggle Buttons */
+.toggle-tabs {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.tab-btn {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  border: none;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: #fff;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Forms */
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px black;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+input::placeholder {
+  color: #ddd;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
