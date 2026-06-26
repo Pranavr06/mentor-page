@@ -1,54 +1,58 @@
-# Mentor-Mentee Management System
+# 🎓 Mentor-Mentee Management System
 
 A role-based web application designed to streamline mentor-mentee interactions within educational institutions. The system allows mentors to manage their assigned mentees, monitor academic progress, and maintain profile information through a secure and user-friendly interface.
 
-## Features
+## ✨ Features
 
-### Mentor Module
+### 👨‍🏫 Mentor Module
+
 Mentors can:
 
-- View assigned mentees
-- Access mentee profiles and academic records
-- Edit mentee personal and academic information
-- Update their own profile details
-- Monitor student performance and progress
-- Manage mentor dashboard activities
+* 👥 View assigned mentees
+* 📋 Access mentee profiles and academic records
+* ✏️ Edit mentee personal and academic information
+* 👤 Update their own profile details
+* 📊 Monitor student performance and progress
+* 🖥️ Manage mentor dashboard activities
 
-### Mentee Module
+### 🎓 Mentee Module
+
 Mentees can:
 
-- View their profile information
-- Edit their own personal details
-- Update academic records and marks
-- Access mentor information
-- Maintain their academic progress data
+* 👤 View their profile information
+* ✏️ Edit their own personal details
+* 📚 Update academic records and marks
+* 👨‍🏫 Access mentor information
+* 📈 Maintain their academic progress data
 
-## Role-Based Access Control
+## 🔐 Role-Based Access Control
 
-| Feature | Mentor | Mentee |
-|---------|---------|---------|
-| View own profile | ✅ | ✅ |
-| Edit own profile | ✅ | ✅ |
-| View academic details | ✅ | ✅ |
-| Edit own academic marks | ✅ | ✅ |
-| View assigned mentees | ✅ | ✅ |
-| Edit other mentee details | ✅ | ❌ |
-| Access mentor dashboard | ✅ | ❌ |
+| Feature                   | Mentor | Mentee |
+| ------------------------- | ------ | ------ |
+| View own profile          | ✅      | ✅      |
+| Edit own profile          | ✅      | ✅      |
+| View academic details     | ✅      | ✅      |
+| Edit own academic marks   | ✅      | ✅      |
+| View assigned mentees     | ✅      | ✅      |
+| Edit other mentee details | ✅      | ❌      |
+| Access mentor dashboard   | ✅      | ❌      |
 
-## Technology Stack
+## 🛠️ Technology Stack
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
+### 🎨 Frontend
 
-### Backend
-- PHP
-- MySQL Database
+* HTML5
+* CSS3
+* JavaScript
 
-## Project Structure
+### ⚙️ Backend
 
-```
+* PHP
+* MySQL Database
+
+## 📂 Project Structure
+
+```text
 mentor-page/
 │
 ├── index.html
@@ -74,50 +78,50 @@ mentor-page/
 └── styles.css
 ```
 
-## System Workflow
+## 🔄 System Workflow
 
-1. User logs into the system.
-2. System authenticates the user through the PHP backend.
-3. User role (Mentor/Mentee) is identified.
-4. Dashboard is loaded based on role permissions.
-5. Data is fetched dynamically from the MySQL database using PHP APIs.
-6. Users can view and update authorized information.
+1. 🔑 User logs into the system.
+2. 🔐 System authenticates the user through the PHP backend.
+3. 👤 User role (Mentor/Mentee) is identified.
+4. 📊 Dashboard is loaded based on role permissions.
+5. 🗄️ Data is fetched dynamically from the MySQL database using PHP APIs.
+6. ✏️ Users can view and update authorized information.
 
-## Database Integration
+## 🗄️ Database Integration
 
 The application uses a PHP backend to:
 
-- Authenticate users
-- Fetch mentor and mentee information
-- Retrieve academic records
-- Update profile details
-- Maintain role-based access control
-- Manage mentor-mentee relationships
+* 🔐 Authenticate users
+* 📋 Fetch mentor and mentee information
+* 📚 Retrieve academic records
+* ✏️ Update profile details
+* 🛡️ Maintain role-based access control
+* 👥 Manage mentor-mentee relationships
 
-## Security Features
+## 🛡️ Security Features
 
-- Session-based authentication
-- Role-based authorization
-- Restricted access to sensitive data
-- Server-side validation
-- Controlled profile editing permissions
+* Session-based authentication
+* Role-based authorization
+* Restricted access to sensitive data
+* Server-side validation
+* Controlled profile editing permissions
 
-## Future Enhancements
+## 🚀 Future Enhancements
 
-- Attendance management
-- Internal marks analytics
-- Performance visualization charts
-- Notification system
-- File/document uploads
-- Meeting scheduler
-- Report generation
-- Email integration
+* 📅 Attendance management
+* 📊 Internal marks analytics
+* 📈 Performance visualization charts
+* 🔔 Notification system
+* 📁 File/document uploads
+* 🤝 Meeting scheduler
+* 📄 Report generation
+* 📧 Email integration
 
-## Team & Contributions
+## 👥 Team & Contributions
 
 ### **Pranav R**
 
-**Frontend Development & Documentation Lead**
+**💻 Frontend Development & Documentation Lead**
 
 * Developed mentor and mentee dashboards and core UI components.
 * Improved overall user experience and interface design.
@@ -128,7 +132,7 @@ The application uses a PHP backend to:
 
 ### **Pramukh A Nayak**
 
-**Backend Developer**
+**⚙️ Backend Developer**
 
 * Developed backend logic and server-side functionalities.
 * Implemented database operations and data management.
@@ -138,7 +142,7 @@ The application uses a PHP backend to:
 
 ### **Pranav Shenoy**
 
-**Frontend Development & Authentication**
+**🔐 Frontend Development & Authentication**
 
 * Assisted in frontend development and system integration.
 * Implemented role-based authentication and authorization mechanisms.
@@ -148,7 +152,7 @@ The application uses a PHP backend to:
 
 ### **Prarthana Acharya**
 
-**Content & Project Coordination**
+**📝 Content & Project Coordination**
 
 * Managed project content and documentation support.
 * Assisted in team coordination and project planning.
@@ -158,7 +162,7 @@ The application uses a PHP backend to:
 
 ### **Prarthana Nayak**
 
-**Testing & Quality Assurance**
+**🧪 Testing & Quality Assurance**
 
 * Conducted functional and usability testing.
 * Identified and reported bugs and system issues.
@@ -168,7 +172,7 @@ The application uses a PHP backend to:
 
 ### **Pratham (NNM24IS163)**
 
-**Frontend Development & Debugging**
+**🛠️ Frontend Development & Debugging**
 
 * Developed responsive user interfaces using Bootstrap.
 * Fixed frontend bugs and JavaScript issues.
@@ -178,7 +182,7 @@ The application uses a PHP backend to:
 
 ### **Pratham (NNM24IS164)**
 
-**UI/UX Designer**
+**🎨 UI/UX Designer**
 
 * Designed application layouts and visual components.
 * Improved visual consistency and user experience.
@@ -186,4 +190,4 @@ The application uses a PHP backend to:
 
 ---
 
-> Developed as an academic project to facilitate efficient mentor-mentee management and academic monitoring within educational institutions.
+> 🎓 Developed as an academic project to facilitate efficient mentor-mentee management and academic monitoring within educational institutions.
