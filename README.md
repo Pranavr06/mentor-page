@@ -30,9 +30,9 @@ Mentees can:
 | View own profile | ✅ | ✅ |
 | Edit own profile | ✅ | ✅ |
 | View academic details | ✅ | ✅ |
-| Edit own academic marks | ❌ | ✅ |
-| View assigned mentees | ✅ | ❌ |
-| Edit mentee details | ✅ | ❌ |
+| Edit own academic marks | ✅ | ✅ |
+| View assigned mentees | ✅ | ✅ |
+| Edit other mentee details | ✅ | ❌ |
 | Access mentor dashboard | ✅ | ❌ |
 
 ## Technology Stack
