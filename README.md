@@ -113,11 +113,76 @@ The application uses a PHP backend to:
 - Report generation
 - Email integration
 
-## Author
+## Team & Contributions
 
-**Pranav R**  
-Information Science Engineering  
-NMAM Institute of Technology
+### **Pranav R**
+
+**Frontend Development & Documentation Lead**
+
+* Developed mentor and mentee dashboards and core UI components.
+* Improved overall user experience and interface design.
+* Led project documentation, including reports, presentations, and user manuals.
+* Coordinated frontend implementation and project integration.
+
+---
+
+### **Pramukh A Nayak**
+
+**Backend Developer**
+
+* Developed backend logic and server-side functionalities.
+* Implemented database operations and data management.
+* Built APIs and handled backend integration.
+
+---
+
+### **Pranav Shenoy**
+
+**Frontend Development & Authentication**
+
+* Assisted in frontend development and system integration.
+* Implemented role-based authentication and authorization mechanisms.
+* Worked on user access control and session management.
+
+---
+
+### **Prarthana Acharya**
+
+**Content & Project Coordination**
+
+* Managed project content and documentation support.
+* Assisted in team coordination and project planning.
+* Contributed to requirement gathering and organization.
+
+---
+
+### **Prarthana Nayak**
+
+**Testing & Quality Assurance**
+
+* Conducted functional and usability testing.
+* Identified and reported bugs and system issues.
+* Ensured system reliability and stability.
+
+---
+
+### **Pratham (NNM24IS163)**
+
+**Frontend Development & Debugging**
+
+* Developed responsive user interfaces using Bootstrap.
+* Fixed frontend bugs and JavaScript issues.
+* Assisted in UI optimization and responsiveness.
+
+---
+
+### **Pratham (NNM24IS164)**
+
+**UI/UX Designer**
+
+* Designed application layouts and visual components.
+* Improved visual consistency and user experience.
+* Contributed to interface design and styling decisions.
 
 ---
 
